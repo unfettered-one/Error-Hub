@@ -6,3 +6,5 @@ errorhub.egg-info/PKG-INFO
 errorhub.egg-info/dependency_links.txt
 dist/errorhub-0.1.0.tar.gz
 dist/errorhub-0.1.0-py3-none-any.whl
+*.gz
+*.whl
