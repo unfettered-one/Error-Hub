@@ -6,7 +6,7 @@ setup(
     author="Yash Pakhale",
     author_email="pakhaleyash7@gmail.com",
     url="https://github.com/unfettered-one/Error-Hub.git",
-    version="0.1.2",
+    version="0.1.3",
     packages=find_packages(where="errorhub"),
     package_dir={"errorhub": "errorhub/errorhub"},
     include_package_data=True,
