@@ -6,10 +6,8 @@ setup(
     author="Yash Pakhale",
     author_email="pakhaleyash7@gmail.com",
     url="https://github.com/unfettered-one/Error-Hub.git",
-    version="0.1.5",
-    packages=find_packages(where="errorhub"),
-    package_dir={"": "errorhub/errorhub"},
-    include_package_data=True,
+    version="0.1.8",
+    packages=find_packages(),
     install_requires=["fastapi==0.116.1", "pydantic==2.11.7", "dotenv==0.9.9", "requests==2.32.5"],
     entry_points={
         "console_scripts": [],
