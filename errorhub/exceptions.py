@@ -1,4 +1,7 @@
-# error_hub/exceptions.py
+"""
+All Custom exception you will need in your life
+"""
+
 from datetime import datetime, timezone
 import uuid
 from errorhub.models import ErrorDetail, ErrorSeverity, EnvironmentEnum
@@ -20,6 +23,9 @@ class ErrorHubException(Exception):
         trace_id: str | None = None,
         context: dict = {},
     ):
+        """
+        Super Exception Inherited by every custom Excetion in error hub
+        """
         self.error_detail = ErrorDetail(
             service=service,
             error_type=error_type,

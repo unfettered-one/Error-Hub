@@ -1,3 +1,7 @@
+"""
+Basic unit of errorhub life...everything depends on this model
+"""
+
 from enum import Enum
 from pydantic import BaseModel
 from datetime import datetime
