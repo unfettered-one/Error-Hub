@@ -25,7 +25,7 @@ def api_exception_handler(route_func):
         except HTTPException as http_exc:
             # Handle FastAPI HTTPExceptions
             return JSONResponse(status_code=http_exc.status_code, content={"detail": http_exc.detail})
-        except Exception as exc:
+        except Exception as exc:  # pylint: disable=W0718
             return JSONResponse(
                 status_code=500,
                 content={

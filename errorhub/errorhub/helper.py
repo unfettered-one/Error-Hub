@@ -66,7 +66,7 @@ async def raise_for_status_async(response, service_name: str, env: EnvironmentEn
     if hasattr(response, "aread") or hasattr(response, "atext"):
         try:
             content = await response.text()
-        except Exception:
+        except Exception:  # pylint: disable=W0718
             content = "<could not read response content>"
     else:
         content = getattr(response, "text", str(response))
